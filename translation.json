@@ -82,129 +82,132 @@
           "description": "Al introducir un token, usted acepta nuestros Términos de Servicio. Nunca compartas este token con nadie y trátalo como una contraseña."
         },
         "appearance": {
-          "title": "Appearance",
+          "title": "Apariencia",
           "select": {
-            "prompt": "Creating Temporary Channels"
+            "prompt": "Creando Canales Temporales"
           },
-          "description": "Click on the preview to visit the Discord Developer Portal to change its name, icon, banner and 'About Me' section. Updating the status can take up to 5 minutes."
-        },
-        "invite": {
-          "title": "Invite",
-          "button": "Add to your server",
-          "description": "Your TempVoice is ready to be invited to your server. Make sure Premium is activated and the public bot is removed."
-        },
-        "subscribe": {
-          "button": "Continue to Stripe"
-        },
-        "upgrade": {
-          "title": "Upgrade to 'Your Own Branding'",
-          "description": "When you upgrade your Premium plan, the difference between your current plan and the new plan will be added to your next invoice. Your billing cycle won't change. The additional charge will be prorated based on the unused portion of your current billing period. Starting with your next renewal, your subscription will continue at the regular price of the upgraded plan.",
-          "confirmation": "I authorize TempVoice to upgrade me.",
-          "button": {
-            "upgrade": "Upgrade Now!",
-            "cancel": "Cancel"
-          }
-        }
-      }
-    },
-    "required": "PREMIUM"
+*********************
+"description": "Haz clic en la vista previa para visitar el Portal de Desarrolladores de Discord y cambiar su nombre, ícono, banner y sección 'Acerca de mí'. La actualización del estado puede tardar hasta 5 minutos."
+},
+"invite": {
+  "title": "Invitación",
+  "button": "Agregar a tu servidor",
+  "description": "Tu TempVoice está listo para ser invitado a tu servidor. Asegúrate de que Premium esté activado y que el bot público haya sido eliminado."
+},
+"subscribe": {
+  "button": "Continuar a Stripe"
+},
+"upgrade": {
+  "title": "Mejorar a 'Tu Propia Marca'",
+  "description": "Cuando actualices tu plan Premium, la diferencia entre tu plan actual y el nuevo se agregará a tu próxima factura. Tu ciclo de facturación no cambiará. El cargo adicional se prorrateará según la parte no utilizada del período de facturación actual. A partir de tu próxima renovación, tu suscripción continuará al precio regular del plan mejorado.",
+  "confirmation": "Autorizo a TempVoice a actualizarme.",
+  "button": {
+    "upgrade": "¡Actualizar ahora!",
+    "cancel": "Cancelar"
+  }
+}
+}
+},
+"required": "PREMIUM"
+},
+"dashboard": {
+"navigation": {
+  "greet_user": "¡Hola, {{user}}!",
+  "start_page": "Página de Inicio",
+  "server_selection": "Selección de Servidor",
+  "server_settings": "Configuración del Servidor",
+  "creator_settings": "Configuración de Canales Maestros",
+  "premium": {
+    "active": "Premium Activo",
+    "inactive": "Sin Premium",
+    "branding_tempvoice": "Marca TempVoice",
+    "branding_custom": "Tu Propia Marca"
+  }
+},
+"unsaved_changes": {
+  "description": "Cuidado: ¡tienes cambios sin guardar!",
+  "button": {
+    "reset": "Restablecer",
+    "save": "Guardar Cambios"
+  }
+},
+"guild": {
+  "language": {
+    "title": "Idioma de TempVoice",
+    "description": "Cambia el idioma de la aplicación de Discord"
   },
-  "dashboard": {
-    "navigation": {
-      "greet_user": "Hey, {{user}}!",
-      "start_page": "Start Page",
-      "server_selection": "Server Selection",
-      "server_settings": "Server Settings",
-      "creator_settings": "Creator Settings",
-      "premium": {
-        "active": "Premium Active",
-        "inactive": "No Premium",
-        "branding_tempvoice": "TempVoice Branding",
-        "branding_custom": "Your Own Branding"
-      }
+  "creator": {
+    "title": "Canales Maestros",
+    "description": "Canales de voz estándar que crean canales de voz temporales cuando un usuario se une.",
+    "create": {
+      "title": "¡Agregar un nuevo Canal Maestro!",
+      "description": "Esto creará un nuevo canal en tu servidor de Discord, usado para generar canales temporales."
     },
-    "unsaved_changes": {
-      "description": "Careful - you have unsaved changes!",
-      "button": {
-        "reset": "Reset",
-        "save": "Save Changes"
-      }
+    "delete": {
+      "title": "¿Eliminar este Canal Maestro?",
+      "description": "Esto eliminará el canal de tu servidor de Discord y quitará todas sus configuraciones. Esta acción no se puede deshacer."
     },
-    "guild": {
-      "language": {
-        "title": "TempVoice Language",
-        "description": "Change the language of the Discord app"
+    "button": {
+      "create": "Crear",
+      "delete": "Eliminar",
+      "cancel": "Cancelar"
+    },
+    "premium": {
+      "title": "Límite de Canales Maestros Alcanzado",
+      "description": "Necesitas TempVoice Premium para configurar Canales Maestros ilimitados."
+    }
+  },
+  "interface": {
+    "preview": {
+      "title": "Vista Previa de la Interfaz",
+      "description": "Puedes interactuar con la Interfaz de TempVoice para personalizarla. Algunas funciones requieren Premium."
+    },
+    "name": {
+      "title": "Nombre del Webhook",
+      "description": "Elige un nombre claro y reconocible, por ejemplo el nombre de tu servidor de Discord."
+    },
+    "avatar": {
+      "title": "Avatar del Webhook",
+      "description": "Establece una imagen de avatar, como el ícono de tu servidor u otro gráfico apropiado."
+    },
+    "title": {
+      "title": "Título",
+      "description": "Proporciona un título corto y significativo, por ejemplo el nombre de tu servidor."
+    },
+    "description": {
+      "title": "Descripción",
+      "description": "Escribe una descripción que explique el propósito y funcionalidad de la Interfaz de TempVoice."
+    },
+    "attachment": {
+      "title": "Adjunto",
+      "description": "Inserta la URL de una imagen para mostrar como adjunto."
+    },
+    "footer": {
+      "title": "Pie de Página",
+      "description": "Agrega un pie de página que dé contexto o instrucciones relacionadas con los botones."
+    },
+    "color": {
+      "title": "Color",
+      "description": "Especifica un código de color HEX para personalizar el color de acento del embed."
+    },
+    "buttons": {
+      "description": "Haz clic en un botón para desactivarlo. Intenta arrastrarlos para reorganizarlos."
+    },
+    "send": {
+      "title": "Enviar Interfaz",
+      "select": {
+        "prompt": "Selecciona un Canal de Texto"
       },
-      "creator": {
-        "title": "Creator Channels",
-        "description": "Standard voice channels that create temporary voice channels when a user joins them.",
-        "create": {
-          "title": "Add a new Creator!",
-          "description": "This will create a new channel in your Discord server, used to generate temporary channels."
-        },
-        "delete": {
-          "title": "Delete this Creator?",
-          "description": "This will delete the channel from your Discord server and remove all its configurations. This action cannot be undone."
-        },
-        "button": {
-          "create": "Create",
-          "delete": "Delete",
-          "cancel": "Cancel"
-        },
-        "premium": {
-          "title": "Creator Limit Reached",
-          "description": "You need TempVoice Premium to set up unlimited Creator Channels."
-        }
-      },
-      "interface": {
-        "preview": {
-          "title": "Interface Preview",
-          "description": "You can interact with the TempVoice Interface to customize it. Some features require Premium."
-        },
-        "name": {
-          "title": "Webhook Name",
-          "description": "Choose a clear and recognizable name, for example your Discord server name."
-        },
-        "avatar": {
-          "title": "Webhook Avatar",
-          "description": "Set an avatar image, such as your server’s icon or another fitting graphic."
-        },
-        "title": {
-          "title": "Title",
-          "description": "Provide a short and meaningful title, e.g. your server name."
-        },
-        "description": {
-          "title": "Description",
-          "description": "Write a description that explains the purpose and functionality of the TempVoice Interface."
-        },
-        "attachment": {
-          "title": "Attachment",
-          "description": "Insert the URL of an image to display as an attachment."
-        },
-        "footer": {
-          "title": "Footer",
-          "description": "Add a footer that gives context or instructions related to the buttons."
-        },
-        "color": {
-          "title": "Color",
-          "description": "Specify a HEX color code to customize the embed’s accent color."
-        },
-        "buttons": {
-          "description": "Click a button to disable it. Try dragging them to rearrange."
-        },
-        "send": {
-          "title": "Send Interface",
-          "select": {
-            "prompt": "Select a Text Channel"
-          },
-          "description": "Send the customized TempVoice Interface to a text channel of your choice. We recommend a channel where no one else can write.",
-          "status": {
-            "success": "Interface has been sent to {{channel}}",
-            "failed": "Interface could not be sent. Please try again later."
-          }
-        }
+      "description": "Envía la Interfaz personalizada de TempVoice a un canal de texto de tu elección. Recomendamos un canal donde nadie más pueda escribir.",
+      "status": {
+        "success": "La interfaz ha sido enviada a {{channel}}",
+        "failed": "No se pudo enviar la interfaz. Por favor, intenta más tarde."
       }
-    },
+    }
+  }
+}
+
+***************************
     "creator": {
       "tab": {
         "overview": "Overview",
